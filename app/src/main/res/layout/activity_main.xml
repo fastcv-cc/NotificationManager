@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingVertical="20dp"
+        android:paddingHorizontal="20dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/title"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etTitle"
+            android:text="测试标题"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/content"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etContent"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_marginTop="5dp"
+            android:text="这是一段文本内容"
+            android:gravity="start"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/small_icon"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbIc1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:drawableEnd="@drawable/ic_small_icon1" />
+
+            <RadioButton
+                android:id="@+id/rbIc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:drawableEnd="@drawable/ic_small_icon2" />
+
+            <RadioButton
+                android:id="@+id/rbIc3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:drawableEnd="@drawable/ic_small_icon3" />
+
+            <RadioButton
+                android:id="@+id/rbIc4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:drawableEnd="@drawable/ic_small_icon4" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/big_icon"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbImg1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:checked="true"
+                android:background="@drawable/img1" />
+
+            <RadioButton
+                android:id="@+id/rbImg2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/img2" />
+
+            <RadioButton
+                android:id="@+id/rbImg3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/img3" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/priority"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbPriority1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priority_default"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbPriority2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priority_low"/>
+
+            <RadioButton
+                android:id="@+id/rbPriority3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priority_min"/>
+
+            <RadioButton
+                android:id="@+id/rbPriority4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priority_high"/>
+
+            <RadioButton
+                android:id="@+id/rbPriority5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/priority_max"/>
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/notification_channel"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbImportance1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="无效的通知 渠道"
+                android:checked="true"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbImportance2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重要性小的通知 渠道"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbImportance3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重要性低的通知 渠道"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbImportance4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重要性普通的通知 渠道"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbImportance5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重要性高的通知 的渠道"
+                tools:ignore="HardcodedText" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/click_pendingintent"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbIntent1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_app"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbIntent2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_activity"/>
+
+            <RadioButton
+                android:id="@+id/rbIntent3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/open_service"/>
+
+            <RadioButton
+                android:id="@+id/rbIntent4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/send_broadcast"/>
+
+            <RadioButton
+                android:id="@+id/rbIntent5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/no_response"/>
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="通知提示角标类型"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbBadge1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BADGE_ICON_NONE"
+                android:checked="true"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbBadge2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BADGE_ICON_SMALL"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbBadge3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BADGE_ICON_LARGE"
+                tools:ignore="HardcodedText" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="通知锁屏时可见性"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            tools:ignore="HardcodedText" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbVisible1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VISIBILITY_PUBLIC"
+                android:checked="true"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbVisible2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VISIBILITY_PRIVATE"
+                tools:ignore="HardcodedText" />
+
+            <RadioButton
+                android:id="@+id/rbVisible3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="VISIBILITY_SECRET"
+                tools:ignore="HardcodedText" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/whether_automatically_cancel"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/auto_cancel"
+            android:id="@+id/swAutoCancel" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/number_of_desktop_notifications"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/etNumberOfDesktopNotifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned"
+            android:text="@string/one"
+            android:layout_marginTop="5dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/btSend"
+            android:text="@string/send_notification" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:id="@+id/btActiveNotifications"
+            android:text="获取存在的通知列表"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">通知测试器</string>
+    <string name="title">标题</string>
+    <string name="content">内容</string>
+    <string name="small_icon">小图标</string>
+    <string name="big_icon">大图标</string>
+    <string name="priority">优先级（8.0以下适用）</string>
+    <string name="priority_default">PRIORITY_DEFAULT</string>
+    <string name="priority_low">PRIORITY_LOW</string>
+    <string name="priority_min">PRIORITY_MIN</string>
+    <string name="priority_high">PRIORITY_HIGH</string>
+    <string name="priority_max">PRIORITY_MAX</string>
+    <string name="click_pendingintent">点击意图（PendingIntent）</string>
+    <string name="open_app">拉起App</string>
+    <string name="open_activity">打开指定Activity</string>
+    <string name="open_service">拉起服务</string>
+    <string name="send_broadcast">发送广播</string>
+    <string name="no_response">不响应</string>
+    <string name="whether_automatically_cancel">是否自动取消</string>
+    <string name="auto_cancel">自动取消    </string>
+    <string name="number_of_desktop_notifications">桌面通知数量</string>
+    <string name="send_notification">发送通知</string>
+    <string name="one">1</string>
+    <string name="notification_channel">通知渠道（8.0及以上适用）</string>
+</resources>
